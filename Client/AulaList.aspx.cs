@@ -1,7 +1,10 @@
 ﻿using Domain;
+using ModelEF;
 using Persistence;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Util;
@@ -10,7 +13,8 @@ namespace Client
 {
     public partial class AulaList : System.Web.UI.Page
     {
-        AulaPersistence aulaPersistence = new AulaPersistence();
+        //AulaPersistence aulaPersistence = new AulaPersistence();
+        AulaDBEntities context = new AulaDBEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadGridView();
@@ -32,7 +36,10 @@ namespace Client
         {
             try
             {
-                aulaPersistence.Delete(int.Parse(lblSelectedId.Text));
+                int id = Convert.ToInt32(lblSelectedId.Text);
+                //aulaPersistence.Delete(int.Parse(lblSelectedId.Text));
+                context.aula.Remove(context.aula.First(x => x.id == id));
+                context.SaveChanges();
                 SendMessage(Message.MSG_DELETE_SUCCESS, Color.Green);
                 LoadGridView();
             }
@@ -43,7 +50,8 @@ namespace Client
         }
         private void LoadGridView()
         {
-            gvResult.DataSource = aulaPersistence.FindAll();
+            //gvResult.DataSource = aulaPersistence.FindAll();
+            gvResult.DataSource = context.aula.ToList();
             gvResult.DataBind();
         }
         private void DisplayModal(Page page)

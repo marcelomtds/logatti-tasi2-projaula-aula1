@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{83385E2C-E073-4226-9F8A-0C895B837BBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelEF", "ModelEF\ModelEF.csproj", "{5355BDF4-2659-431B-9174-F88A256C01B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{83385E2C-E073-4226-9F8A-0C895B837BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83385E2C-E073-4226-9F8A-0C895B837BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83385E2C-E073-4226-9F8A-0C895B837BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5355BDF4-2659-431B-9174-F88A256C01B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5355BDF4-2659-431B-9174-F88A256C01B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5355BDF4-2659-431B-9174-F88A256C01B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5355BDF4-2659-431B-9174-F88A256C01B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

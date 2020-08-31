@@ -44,11 +44,11 @@
             <div class="table-responsive">
                 <asp:GridView ID="gvResult" runat="server" AutoGenerateColumns="False" OnRowCommand="GVResult_RowCommand">
                     <Columns>
-                        <asp:BoundField DataField="Id" HeaderText="ID" />
-                        <asp:BoundField DataField="NomeDisciplina" HeaderText="Disciplina" />
-                        <asp:BoundField DataField="QuantidadeAluno" HeaderText="Quantidde de Aluno" />
-                        <asp:BoundField DataField="NomeProfessor" HeaderText="Professor" />
-                        <asp:BoundField DataField="NomeFaculdade" HeaderText="Faculdade" />
+                        <asp:BoundField DataField="id" HeaderText="ID" />
+                        <asp:BoundField DataField="nome_disciplina" HeaderText="Disciplina" />
+                        <asp:BoundField DataField="quantidade_aluno" HeaderText="Quantidde de Aluno" />
+                        <asp:BoundField DataField="nome_professor" HeaderText="Professor" />
+                        <asp:BoundField DataField="nome_faculdade" HeaderText="Faculdade" />
                         <asp:ButtonField ButtonType="Image" HeaderText="Alterar" CommandName="A" ControlStyle-Width="18" ImageUrl="~/img/alterar.png"></asp:ButtonField>
                         <asp:ButtonField ButtonType="Image" HeaderText="Excluir" CommandName="E" ControlStyle-Width="18" ImageUrl="~/img/excluir.png"></asp:ButtonField>
                     </Columns>

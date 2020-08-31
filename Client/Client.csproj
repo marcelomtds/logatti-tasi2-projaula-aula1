@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -101,6 +107,10 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{d31c25ec-e1c9-4aa8-816e-a96d3a98dd6a}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelEF\ModelEF.csproj">
+      <Project>{5355BDF4-2659-431B-9174-F88A256C01B1}</Project>
+      <Name>ModelEF</Name>
     </ProjectReference>
     <ProjectReference Include="..\Persistence\Persistence.csproj">
       <Project>{423181B0-D2B5-423E-B1E4-781187ED1AC5}</Project>
